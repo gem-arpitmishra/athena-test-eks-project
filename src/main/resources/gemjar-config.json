@@ -1,0 +1,30 @@
+{
+  "environment": "beta",
+  "project_name": "ATHENA-UI",
+  "report_name": "Athena_UI_Report",
+  "sub_id": "test_id",
+  "enter_point": "https://apis-beta.gemecosystem.com/enter-point",
+  "jewel_user": "geco-arpit",
+  "jewel_bridge_token": "82079794-12a6-41f9-bef3-c9c97c167e3e1683870551130",
+  "glueCode": "org.gemini.athena.StepDefinition",
+  "beta": {
+    "browserName": "google-chrome",
+    "launchUrl": "https://athena-dev.geminisolutions.com/login",
+    "browserTimeout": 100
+  },
+  "prod": {
+    "browserName": "chrome",
+    "launchUrl": "https://athena-dev.geminisolutions.com/login",
+    "browserTimeout": 100
+  },
+   "dev": {
+    "browserName": "chrome",
+    "launchUrl": "https://athena-dev.geminisolutions.com/login",
+    "browserTimeout": 100
+  },
+   "other": {
+    "browserName": "chrome",
+    "launchUrl": "https://athena-dev.geminisolutions.com/login",
+    "browserTimeout": 100
+  }
+}

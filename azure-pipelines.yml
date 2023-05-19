@@ -21,9 +21,9 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     
-- task: CmdLine@2
-  inputs:
-    script: cd ./target; ls;
+# - task: CmdLine@2
+#   inputs:
+#     script: cd ./target; ls;
     
 - task: PublishCodeCoverageResults@1
   inputs:

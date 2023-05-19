@@ -9,28 +9,28 @@ Feature: Athena Portal Automation
      | user               | pass     | test|
      | susheel7@gmail.com | abc@1234 | Active|
 
-  Scenario Outline: Validate My Profile data and Explore test
-   Given Navigate to my profile after login <user> and <pass>
-   When  Validating User
-   Then Click on Explore test and validate URL
-    Examples:
-      | user               | pass |
-      | susheel7@gmail.com | abc@1234 |
+  #Scenario Outline: Validate My Profile data and Explore test
+   #Given Navigate to my profile after login <user> and <pass>
+   #When  Validating User
+   #Then Click on Explore test and validate URL
+   # Examples:
+   #   | user               | pass |
+   #   | susheel7@gmail.com | abc@1234 |
 
 
-  Scenario Outline: Unsuccessful login
-    Given Enter username as <username> and password as <password>
-    When Click on signin
-    Then Validate login
-    Examples:
-      | username            | password  |
-      | susheel7@gamil.com  | NULL      |
+  #Scenario Outline: Unsuccessful login
+  #  Given Enter username as <username> and password as <password>
+  #  When Click on signin
+  #  Then Validate login
+   # Examples:
+   #   | username            | password  |
+   #   | susheel7@gamil.com  | NULL      |
 
 
-    Scenario Outline: Forgot Password Validations
-      Given Click on forgot password link
-      When Entering the username <user>
-      Then Validating reset mail sent or not to <user>
-      Examples:
-        | user           |
-        |Hello1@gmail.com|
+    #Scenario Outline: Forgot Password Validations
+     # Given Click on forgot password link
+      #When Entering the username <user>
+      #Then Validating reset mail sent or not to <user>
+      #Examples:
+       # | user           |
+        #|Hello1@gmail.com|

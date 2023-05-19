@@ -29,9 +29,9 @@ steps:
 
 
 
-# - task: PublishCodeCoverageResults@1
-#   inputs:
-#     codeCoverageTool: 'JaCoCo' 
-#     summaryFileLocation: '$(System.DefaultWorkingDirectory)/Jacoco-Testing/target/site/jacoco.xml'
-#     reportDirectory: "$(System.DefaultWorkingDirectory)/Jacoco-Testing/**/site/cobertura" 
-#     additionalCodeCoverageFiles : "$(System.DefaultWorkingDirectory)/**/*.exec"
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'JaCoCo' 
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/target/site/jacoco.xml'
+    reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/cobertura" 
+    additionalCodeCoverageFiles : "$(System.DefaultWorkingDirectory)/**/*.exec"

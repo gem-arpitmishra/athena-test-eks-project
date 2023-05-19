@@ -24,10 +24,10 @@ steps:
 - task: CmdLine@2
   inputs:
     script: cd ./target; ls;
-
+    
 - task: PublishCodeCoverageResults@1
   inputs:
-    codeCoverageTool: 'JaCoCo' 
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/target/site/jacoco.xml'
-    reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/cobertura" 
-    additionalCodeCoverageFiles : "$(System.DefaultWorkingDirectory)/**/*.exec"
+      codeCoverageTool: 'JaCoCo'
+      summaryFileLocation: '**/target/site/jacoco/jacoco.xml'
+      reportDirectory: '**/target/site/jacoco'
+      failIfCoverageEmpty: true

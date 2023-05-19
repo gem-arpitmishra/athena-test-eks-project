@@ -25,10 +25,6 @@ steps:
   inputs:
     script: cd ./target; ls;
 
-    
-
-
-
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'JaCoCo' 

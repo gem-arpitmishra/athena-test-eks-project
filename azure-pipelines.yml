@@ -20,9 +20,18 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: PublishCodeCoverageResults@1
+    
+- task: CmdLine@2
   inputs:
-    codeCoverageTool: 'JaCoCo' 
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/Jacoco-Testing/target/site/jacoco.xml'
-    reportDirectory: "$(System.DefaultWorkingDirectory)/Jacoco-Testing/**/site/cobertura" 
-    additionalCodeCoverageFiles : "$(System.DefaultWorkingDirectory)/**/*.exec"
+    script:"ls ./"
+
+    
+
+
+
+# - task: PublishCodeCoverageResults@1
+#   inputs:
+#     codeCoverageTool: 'JaCoCo' 
+#     summaryFileLocation: '$(System.DefaultWorkingDirectory)/Jacoco-Testing/target/site/jacoco.xml'
+#     reportDirectory: "$(System.DefaultWorkingDirectory)/Jacoco-Testing/**/site/cobertura" 
+#     additionalCodeCoverageFiles : "$(System.DefaultWorkingDirectory)/**/*.exec"

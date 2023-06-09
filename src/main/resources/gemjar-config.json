@@ -5,6 +5,7 @@
   "sub_id": "test_id",
   "enter_point": "https://apis-beta.gemecosystem.com/enter-point",
   "jewel_user": "geco-arpit",
+  "tags": "@test",
   "jewel_bridge_token": "82079794-12a6-41f9-bef3-c9c97c167e3e1683870551130",
   "glueCode": "org.gemini.athena.StepDefinition",
   "beta": {
